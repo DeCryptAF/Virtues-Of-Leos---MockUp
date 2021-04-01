@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup Form | Virtues Of Leos</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="lion">
+            <h3>Virtues of leos</h3>
+            <img src="./assets/lion.png" alt="lion">
+        </div>
+        
+        <div class="title-text">
+            <div class="title login">Login</div>
+            <div class="title signup">Sign up</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Sign up</label>
+
+                <div class="slider-tab"></div>
+            </div>
+
+
+            <div class="form-inner">
+            <!-- Login Form -->
+            <form action="./base.html" class="login">
+                <div class="field">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+            </form>
+            <!-- X Login Form X -->
+
+            <!-- Sign Up Form -->
+
+            <form action="./base.html" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Sign up">
+                </div>
+            </form>
+
+            <!-- X Sign Up Form X -->
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+
+</body>
+</html>

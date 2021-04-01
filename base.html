@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtues of leos</title>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body>
+    
+
+<!-------------Navigation-------------->
+
+<nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <a href="#" class="text-gray">Virtues Of Leos</a>
+            <img src="./assets/lion.png" alt="lion">
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <a href="#" class="cool-link active">Home</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-book-open"></i>
+                    <a href="#"class="cool-link">Titles</a>
+                </li>
+                <li class="nav-link">
+                    <i class="fas fa-award"></i>
+                    <a href="#" class="cool-link">Leaderboard</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="login.html">Logout</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!----X---------Navigation---------X----->
+
+
+
+<!---------------------Main------------------->
+<main>
+    <div class="task">
+        <!-- study -->
+        <div class="task-box" id="navy">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Study</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>This only includes self-study. Amount is by time(minute). 3 points per minute</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+        <!-- Al-Quran -->
+        <div class="task-box" id="blue">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Al-Quran</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>How much time you read Al-Quran. Amount by time(minutes). 7 points per minute.</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>    
+        <!-- Translation -->
+        <div class="task-box" id="purple">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Al-Quran Translation</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>How much you read translation. Amount is by time(minute). 6 points per minute</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+        <!-- Extra Rakaat -->
+        <div class="task-box" id="orange">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Extra Rakaat</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>Update the amount(time) of extra rakaat you pray except for fardh, wajib and main sunnah. 10 points per minute.</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+        <!-- Durood -->
+        <div class="task-box" id="yellow">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Durood</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>Recite durood-e-Ibrahim. You get 1 point per recitation. You are encouraged to recite beyond 100 but only first 100 counts for this task.</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+        <!-- Dhikir #1 -->
+        <div class="task-box" id="red">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Dhikir</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>This only includes saying Subahanallah(33), Alhamdulillah(33) & Allahu Akbar(34) after fardh salat and before sleeping. Amount is by a set of 100 dhikr. Each set 10 points.</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+        <!-- Wadu -->
+        <div class="task-box" id="green">
+            <form class="task-form">
+                    <div class="task-above">
+                        <div>
+                            <h2>Wadu</h2>
+                        </div>
+                        <div class="date">
+                            <label for="date"></label>
+                            <select id="date" name="task-date">
+                                <option value="1-1-2021">1-1-2021</option>
+                                <option value="2-1-2021">2-1-2021</option>
+                                <option value="3-1-2021">3-1-2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>Renew wadu for each waqt (total 5) and before sleep. Also, start with Bismillah and end by reciting kalima sahadat. 3 points each.</p>
+                    <label for="amount"></label>
+                    <input type="text" id="amount" name="task-amount" placeholder="Enter the total amount">
+            </form>
+        </div>
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Submit">
+    </div>
+
+</main>
+
+
+
+<!---------X------------Main----------X--------->
+
+
+
+
+
+
+
+
+
+<!---------------Footer---------------->
+<footer>
+    <!-- <div class="footer-content">
+        <h3>Virtues Of Leos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur modi autem neque aliquid voluptatem ex accusantium quisquam odit. Pariatur iure numquam nobis provident nemo voluptatum voluptates quasi cumque cupiditate itaque.</p>
+        
+    </div> -->
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2020 Pack of Leos.</p>
+    </div>
+</footer>
+<!-------X--------Footer---------X------->
+
+
+
+
+
+<script src="./js/Jquery3.6.0.min.js"></script>
+<!-- Custom Javascript file -->
+<script src="./js/main.js"></script>
+</body>
+</html>
