@@ -6,7 +6,14 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: #1c1c1cdc;
+    background: #0e0d0dc5;
+}
+
+
+canvas {
+    display:block;
+    position: fixed;
+    z-index: -10;
 }
 
 :root{
@@ -47,6 +54,9 @@ html, body{
 #green{
     border-color:green;
 }
+
+
+
 h1{
     font-family: var(--Anton);
     font-size: 2.5rem;
@@ -64,6 +74,13 @@ h3{
 p{
     font-size: 0.8rem;
 }
+hr.solid {
+    border-top: .1rem solid #bbb;
+    margin: 5rem 2rem;
+}
+
+
+
 
 /* ----------Global classes----------- */
 a{
@@ -261,7 +278,94 @@ input[type=submit]:hover {
 
 
 
+/* -------------------Leaderboard-------------- */
 
+.leaderboard{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 10px;
+    margin: 4rem;
+}
+
+.glb-leaderboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-leaderboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+.content-table {
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background: #101010;
+    margin:none;
+    /* width: 50%; */
+    text-align: left;
+}
+
+.content-table p{
+    display: inline;
+    font-size: 11px;
+}
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table caption{
+    text-align: center;
+    width: 4rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+    background: #0F0F0F;
+    font-size: 10px;
+
+}
+.content-table th,
+.content-table td{
+    padding: 1rem 2rem;
+    font-size: 17px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background: #0B0B0B;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+/* ---------X----------Leaderboard-------X------- */
 
 
 
@@ -328,6 +432,22 @@ footer{
 
     .nav .toggle-collapse{
         display: initial;
+    }
+
+    .leaderboard{
+        margin: 1rem;
+    }
+    .content-table{
+        width: 100%;
+    }
+    .content-table th,
+    .content-table td{
+        padding: 1rem .5rem;
+        font-size: 15px;
+    }
+    .content-table p{
+        font-size: 10px;
+        display: inline;
     }
 }
 
